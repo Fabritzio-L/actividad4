@@ -14,5 +14,17 @@ while intentos < 3:
                 acceso = True
             else:
                 intentos += 1
-                print(f"Contraseña incorrecta, le quedan {intentos} intentos.")
+                print(f"Contraseña incorrecta, le quedan {3- intentos} intentos.")
             break
+    if not usuario_correcto:
+        intentos +=1
+        print(f"Usuario incorrecto, le quedan {3- intentos} intentos.")
+    if acceso:
+        break
+if not acceso:
+    print("Se quedo sin intentos, acceso denegado.")
+else:
+    print("-----Menu-----")
+    print("1. Ver perfil.")
+    print("2. Cambiar contraseña.")
+    print("3. Cerrar sesion.")
