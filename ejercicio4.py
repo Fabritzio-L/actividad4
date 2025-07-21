@@ -1,6 +1,7 @@
 productos = {"pizza": 55.00, "hamburguesa":35.99, "pastel":17.50}
 carrito =[]
 for i in productos:
+    print("Productos disponibles")
     print(f"-{i}")
 while True:
     solicitar_producto = input("Ingrese el nombre del producto para consultar precio (o 'fin' para terminar): ").lower()
@@ -34,3 +35,9 @@ else:
         descuento= 0
     iva= subtotal * 0.12
     total_compra= subtotal + iva + prop - descuento
+    print("----FACTURA----")
+    print(f"Subtotal: Q{subtotal:.2f}")
+    print(f"Propina {porcentaje_propina}%: Q{prop:.2f}")
+    print(f"IVA: Q{iva}")
+    print(f"Descuento: Q{descuento:.2f}")
+    print(f"Total: Q{total_compra:.2f}")
