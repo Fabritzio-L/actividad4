@@ -1,0 +1,5 @@
+nombre = input("Ingrese su nombre completo: ")
+dpi = int(input("Ingrese su numero de DPI: "))
+departamento = input("Ingrese su departamento: ")
+año_nacimiento = int(input("Ingrese su año de nacimiento: "))
+print("sdgd")
