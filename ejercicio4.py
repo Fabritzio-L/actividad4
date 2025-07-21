@@ -3,17 +3,27 @@ carrito =[]
 for i in productos:
     print(f"-{i}")
 while True:
-    solicitar_producto = input("\nIngrese el nombre del producto para consultar precio (o 'fin' para terminar): ").strip().lower()
+    solicitar_producto = input("Ingrese el nombre del producto para consultar precio (o 'fin' para terminar): ").lower()
+    if solicitar_producto == "fin":
+        break
     if solicitar_producto in productos:
         precio = productos[solicitar_producto]
         print(f"El precio de {solicitar_producto} es: Q{precio}")
         agregar_producto = input("¿Desea agregar el producto al carrito? (si o no)").lower()
         if agregar_producto in ("si","sí"):
             carrito.append(precio)
-            print(f"{agregar_producto} agregado al carrito")
-        elif agregar_producto in ("no"):
-            print("Producto no agregado")
+            print(f"{solicitar_producto} agregado al carrito")
         else:
-            print("Ingrese una respuesta valida")
+            print("Producto no agregado")
     else:
         print("Producto no encontrado.")
+if not carrito:
+    print("\nNo hay productos en el carrito")
+else:
+    subtotal = sum(carrito)
+    propina = input("¿Desea dejar propina?: ")
+    if propina in ("si","sí"):
+        porcentaje_propina= int(input("Ingrese en porcentaje la propina que quiera dejar: "))
+        prop = subtotal * (porcentaje_propina/100)
+    else:
+        prop = 0
