@@ -27,3 +27,10 @@ else:
         prop = subtotal * (porcentaje_propina/100)
     else:
         prop = 0
+    tarjeta_cliente_frecuente = input("¿Cuenta con tarjeta de cliente frecuente si/no?: ")
+    if tarjeta_cliente_frecuente in ("si","sí"):
+        descuento = subtotal * 0.1
+    else:
+        descuento= 0
+    iva= subtotal * 0.12
+    total_compra= subtotal + iva + prop - descuento
