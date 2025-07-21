@@ -9,5 +9,5 @@ elif len(dpi) != 13:
     print("Numero de DPI incorrecto.")
 else:
     departamento = departamento.lower()
-    if edad <= 18 or (departamento in ["peten", "alta verapaz"] >= 17):
-        print(f"Bienvenido {nombre}, su centro de votación es {departamento}")
+    if edad >= 18 or (departamento in ["peten","petén", "alta verapaz"] >= 17):
+        print(f"Bienvenido {nombre}, su centro de votación es {departamento}.")
