@@ -1,6 +1,8 @@
 ingreso_anual = int(input("Ingrese su ingreso anual: "))
 dependientes = int(input("Ingrese el numero de dependientes: "))
-if ingreso_anual < 40000 and dependientes >2:
+if ingreso_anual <0 or dependientes <0:
+    print("El valor no puede ser negativo")
+elif ingreso_anual < 40000 and dependientes >2:
     print("No paga impuestos.")
 else:
     if  ingreso_anual <=30000:
