@@ -12,3 +12,10 @@ if tamaño == "grande":
     recargo_tamaño=30
 if urgencia == "no" and peso_paquete <5:
     descuento=20
+total_envio= costo_base + recargo_tamaño + recargo_urgencia - descuento
+print("----Desglose de cálculos----")
+print(f"Costo base: Q{costo_base}")
+print(f"Recargo urgencia: Q{recargo_urgencia}")
+print(f"Recargo tamaño: Q{recargo_tamaño}")
+print(f"Descuento: Q{descuento}")
+print(f"Total de envio: Q{total_envio}")
