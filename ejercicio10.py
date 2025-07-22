@@ -26,3 +26,5 @@ if mes_1 == mes_2 and año_1 == año_2:
     mismo_año_mes = "Estan en el mismo año y mes"
 else:
     mismo_año_mes= "Estan en años o meses distintos"
+print(mayor)
+print(mismo_año_mes)
