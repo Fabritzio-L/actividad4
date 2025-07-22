@@ -1,0 +1,8 @@
+print("Fecha 1")
+dia_1= int(input("Ingrese el dia: "))
+mes_1= int(input("Ingrese el mes: "))
+año_1= int(input("Ingrese el año: "))
+print("Fecha 2")
+dia_2 = int(input("Ingrese el dia: "))
+mes_2 = int(input("Ingrese el mes: "))
+año_2 = int(input("Ingrese el año: "))
