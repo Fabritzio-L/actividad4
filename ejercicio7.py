@@ -1,11 +1,21 @@
 estudiantes =[]
-promedios = []
+curva= True
 for i in range(5):
     nombre= input("Ingrese el nombre del estudiante: ")
     suma=0
     notas =[]
     for j in range(3):
-        nota = int(input("Ingrese las notas del estudiante: "))
+        nota = float(input("Ingrese las notas del estudiante: "))
         notas.append(nota)
         suma += nota
     promedio = suma /3
+    if promedio >= 70:
+        curva = False
+    estudiantes.append([nombre, notas])
+if curva:
+    for e in estudiantes:
+        for i in range(3):
+            e[i][1]=e[i][1]+5
+            if e[i][1] >100:
+                e[i][1] = 100
+
