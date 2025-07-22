@@ -18,4 +18,10 @@ if curva:
             e[i][1]=e[i][1]+5
             if e[i][1] >100:
                 e[i][1] = 100
-
+print("Tabla de estudiantes")
+print("| Nombre | Promedio |")
+print("-"*22)
+for e in estudiantes:
+    promedio = sum(e[1])/3
+    print(f"|{e[0]:<8}|{promedio:>10.2f}|")
+    print("-" * 22)
