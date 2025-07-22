@@ -10,7 +10,14 @@ else:
     precio_final=0
     if dia == "miercoles" or dia == "miércoles":
         print("2x1 el día de hoy")
-        if estudiante== "si" or estudiante "sí":
+        if estudiante== "si" or estudiante =="sí":
             precio_final = precio_estudiantes
         else:
             precio_final = precio
+        print(f"Paga {precio_final} por dos entradas")
+    else:
+        if estudiante== "si" or estudiante =="sí":
+            precio_final = precio_estudiantes
+        else:
+            precio_final = precio
+            print(f"Cumple los requisitos, total a pagar: {precio_final}")
