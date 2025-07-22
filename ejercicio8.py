@@ -10,3 +10,15 @@ elif origen == "sur":
         print("Dirijase al sureste")
     elif destino == "oeste":
         print("Dirijase al suroeste")
+elif origen == "este":
+    if destino == "norte":
+        print("Dirijase al noreste")
+    elif destino == "sur":
+        print("Dirijase al sureste")
+elif origen == "oeste":
+    if destino == "norte":
+        print("Dirijase al noroeste")
+    elif destino == "sur":
+        print("Dirijase al suroeste")
+else:
+    print("Error, solo se permite norte,sur,este u oeste.")
